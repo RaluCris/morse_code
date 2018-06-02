@@ -1,3 +1,5 @@
+#hash containing all the translated alpha letters into morse
+
 morse={"A"=>".-","B"=>"-...","C"=>"-.-.","D"=>"-..","E"=>".",
             "F"=>"..-.","G"=>"--.","H"=>"....","I"=>"..","J"=>".---",
             "K"=>"-.-","L"=>".-..","M"=>"--","N"=>"-.","O"=>"---",
@@ -20,10 +22,12 @@ end
 end
 
 
-
+#text to be transformed
 text=gets.chomp.upcase
+
 #create array of morse chars
 array_values=morse.values
+
 #create array of text char
 array_morse=text.split(" ")
 text_morse=text.chars
